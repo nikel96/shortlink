@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ShortLink</title>
+	<script data-main="../js/app" src="../js/require.js"></script>
+</head>
+<body>
+	<form id="main-form">
+		<input type="text" id="old_link">Оригинальный URL<br>
+		<input type="text" id="desired_link" maxlength="20">Желаемый адрес (20 симв макс)<br>
+		<input type="submit" id="main-button" value="Generate"><br>
+		<img id="load-image" src="../91.svg" style="height: 20px; visibility: hidden"><br>
+		<a id="new_link" href="null"  target="_blank" style="display: none">null</a>
+		<span id="error" style="display: none; color: red;">Данный адрес уже занят</span>
+		
+	</form>
+</body>
+</html>
