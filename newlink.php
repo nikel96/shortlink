@@ -20,7 +20,7 @@ if (isset($_GET['old_link']) && isset($_GET['desired_link'])) {
 			}
 		}
 	}
-	$shortlink[$new_link] = $old_link;
+	$shortlink[$new_link] = str_replace('=', '%3D', $old_link);
 	$fp = fopen('shortlink.ini', 'r+');
 	foreach ($shortlink as $key => $value) {
 		fwrite($fp, $key.'='.$value.PHP_EOL);
