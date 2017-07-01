@@ -1,6 +1,5 @@
 requirejs(['jquery'],
 	function($) {
-alert('asddsadd');
 		$("#main-form").submit(function( event ) {
 			$("#load-image").css("visibility", "visible");
 			$.get(
